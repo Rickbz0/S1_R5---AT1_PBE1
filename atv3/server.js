@@ -11,7 +11,7 @@ app.post('/login', (req, res) => {
 
         // verifica senha e usuario se estão corretos
     if (usuarioUm != "henrique" || senhaUm != 1234 ) {
-            return res.status(400).json({ message: `Usuario ou Senha incorretos. Login não efetuado` });
+            return res.status(400).json({ message: `Usuario ou senha estão incorretos, login não efetuado` });
         }
 
     } catch (error) {
@@ -23,3 +23,4 @@ app.post('/login', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Servidor rodando em localhost:${PORT}`);
 });
+
